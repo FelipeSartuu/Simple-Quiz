@@ -24,7 +24,7 @@ function showQuestion() {
         document.querySelector(".options").innerHTML = ""
 
         let optionsHTML = ""
-        for (i in  q.options) {
+        for (i in q.options) {
             optionsHTML += `<div data-op="${i}" class="option"><span>${parseInt(i)+1}</span> ${q.options[i]} </div>`
         }
         document.querySelector(".options").innerHTML = optionsHTML
